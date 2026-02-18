@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeJS - Recipe Card Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 RecipeJS - Recipe Collection</h1>
+            <p>Discover delicious recipes with detailed instructions</p>
+        </header>
+
+        <div class="controls-section">
+            <div class="filter-group">
+                <label for="cuisine-filter">Filter by Cuisine:</label>
+                <select id="cuisine-filter">
+                    <option value="">All Cuisines</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Asian">Asian</option>
+                    <option value="American">American</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="difficulty-filter">Filter by Difficulty:</label>
+                <select id="difficulty-filter">
+                    <option value="">All Levels</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="time-asc">Cooking Time (Low to High)</option>
+                    <option value="time-desc">Cooking Time (High to Low)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="recipes-container" class="recipes-grid">
+            <!-- Recipe cards will be inserted here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
